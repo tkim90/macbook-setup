@@ -1,0 +1,43 @@
+### --TAES CUSTOM PREFERENCES-- ###
+
+# exa:
+alias l="exa -abghHliS"
+alias ld='ls -l | grep "^d"'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias tree='tree -L 1'
+
+alias brave='open -a "Brave Browser"'
+alias chrome='open -a "Google Chrome"'
+alias code='open -a "Visual Studio Code"'
+alias editzsh='nano ~/.zshrc'
+alias resetzsh='source ~/.zshrc'
+
+alias gh='git hist'
+alias gh3='git hist --max-count=3'
+alias gd='git diff '
+alias gs='git status'
+
+setopt autocd # assume "cd" when a command is a directory
+setopt histignorealldups # Substitute commands in the prompt
+setopt sharehistory # Share the same history between all shells
+setopt promptsubst # required for git plugin
+
+bindkey "$terminfo[khome]" beginning-of-line # Home
+bindkey "$terminfo[kend]" end-of-line # End
+bindkey "$terminfo[kich1]" overwrite-mode # Insert
+bindkey "$terminfo[kdch1]" delete-char # Delete
+bindkey "$terminfo[kcuu1]" up-line-or-history # Up
+bindkey "$terminfo[kcud1]" down-line-or-history # Down
+bindkey "$terminfo[kcub1]" backward-char # Left
+bindkey "$terminfo[kcuf1]" forward-char # Right
+
+# Bind ctrl-left / ctrl-right
+bindkey "\e[1;5D" backward-word
+bindkey "\e[1;5C" forward-word
+
+plugins=(git colored-man-pages colorize pip python brew osx zsh-syntax-highlighting zsh-autosuggestions)
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+### --END TAES CUSTOM PREFERENCES-- ###
