@@ -36,3 +36,7 @@ Resources for new macbook setup
 - OneTab
 - Privacy Badger
 - React Dev Tools
+
+## To Do List
+[] Set up SSH key
+[] Save public key to git
