@@ -38,5 +38,5 @@ Resources for new macbook setup
 - React Dev Tools
 
 ## To Do List
-[] Set up SSH key
-[] Save public key to git
+- Set up SSH key
+- Save public key to git
